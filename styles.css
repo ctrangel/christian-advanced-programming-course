@@ -1,6 +1,37 @@
-#heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.card {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+      box-shadow: 5px 4px 2px 4px #aff;
+  transition: all 0.3s ease-in-out;
 }
