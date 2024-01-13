@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HELLO</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#heading">Home</a></li>
+        <li><a href="#pic">Pic</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <section class="section" id="heading">
       <div class="card">
         <h1 id="heading">HELLO</h1>
@@ -15,7 +25,76 @@
     </section>
     <section class="section" id="pic">
       <div class="card">
-        <img src="./media/placeholder.png" alt="Christian"  style="width: 25em; height: 25em; margin: 5em;"/>
+        <img
+          src="./media/placeholder.png"
+          alt="Christian"
+          style="width: 25em; height: 25em; margin: 5em"
+        />
+      </div>
+    </section>
+    <section class="section" id="interests">
+      <div class="card">
+        <h1>Interests</h1>
+        <div class="scrollable-div">
+          <ul id="interests-grid">
+            <li>Outside</li>
+            <li>Travel</li>
+            <li>Music</li>
+            <li>Gaems n such</li>
+            <li>Reading</li>
+            <li>Piano</li>
+            <li>Design</li>
+            <li>Long Boarding</li>
+            <li>Tennis</li>
+            <li>Observing</li>
+            <li>Meandering</li>
+            <li>Football</li>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Tacos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="courses">
+      <div class="card">
+        <h1>Spring 2024 Courses</h1>
+        <ul id="course-grid">
+          <li>
+            <p>BMGT 338</p>
+            <p>Quan Ops</p>
+          </li>
+          <li>
+            <p>CMPS 261</p>
+            <p>Management</p>
+          </li>
+          <li>
+            <p>CMPS 262</p>
+            <p>Advanced Programming</p>
+          </li>
+          <li>
+            <p>CMPS 300</p>
+            <p>IT for Tim</p>
+          </li>
+          <li>
+            <p>COMM 101</p>
+            <p>Oral Com</p>
+          </li>
+          <li>
+            <p>ENGL 254</p>
+            <p>The art of the short story</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="card">
+        <h1>Contact</h1>
+        <ul>
+          <li>Phone: 555-555-5555</li>
+          <li>Email:</li>
+          <li>Address:</li>
+        </ul>
       </div>
     </section>
   </body>

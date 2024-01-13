@@ -4,6 +4,11 @@ body {
   line-height: 1.5;
   color: #333;
   background-color: #ffffff;
+  background-image: url(./media/sand-dunes2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -19,6 +24,37 @@ body {
   flex-direction: column;
   padding: 0;
   margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 3em;
+  background-color: white;
+  top: 0;
+  position: sticky;
+  
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  margin: 0.5em;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 .card {
@@ -29,9 +65,121 @@ body {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  padding: 0;
-  background-color: #ffffff;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-      box-shadow: 5px 4px 2px 4px #aff;
+  box-shadow: 5px 4px 2px 4px #aff;
   transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 5px 4px 2px 4px rgb(175, 153, 255);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.scrollable-div {
+  height: 20em;
+  overflow-y: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  padding-right: 2em;
+  padding-left: 2em;
+  scrollbar-color: transparent transparent;
+}
+
+.scrollable-div ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.scrollable-div li {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color:  #aff ;
+  transition: all 0.3s ease-in-out;
+  height: 3em;
+}
+
+.scrollable-div li:hover {
+  background-color: #6a6a69;
+  color: white;
+}
+#interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  padding: 0;
+  margin: 0;
+}
+#interests-card {
+  padding-top: 10em;
+}
+
+#course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+#course-grid li {
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background-color: #ff9899;
+  border-radius: 5px;
+  box-shadow: #fffdfd 0px 0px 0px 6px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+#course-grid li:hover {
+  background-color: #ffb7ce;
+  box-shadow: #ca9bf7 0px 0px 20px 6px;
+  color: grey;
 }
