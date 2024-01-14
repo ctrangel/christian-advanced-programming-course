@@ -3,16 +3,76 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #ffffff;
-  background-image: url(./media/sand-dunes2.jpg);
+  background-color: #ffffffc7;
+  /* background-image: url(./media/sand-dunes2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
+#night-mode-toggle {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: white;
+  padding: 0.5em;
+  border: #aff solid 2px;
+  box-shadow: #aff 5px 6px 0px 0px;
+  transition: box-shadow 0.5s ease-in-out;
+  margin-right: 0;
+}
+
+#night-mode-toggle:hover {
+  box-shadow: #aff 1px 1px 0px 0px;
+  background-color: black;
+  color: #aff;
+  border-color: black;
+}
+
+body.night-mode {
+  background-color: #222;
+  color: #fff;
+}
+body.night-mode h1 {
+  background-color: #333;
+  color: #fff;
+}
+
+body.night-mode .nav-bar a {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+body.night-mode #interests-grid li {
+  background-color: #333;
+  color: #fff;
+}
+
+body.night-mode #course-grid li {
+  background-color: #333;
+  color: #fff;
+}
+
+body.night-mode #night-mode-toggle {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+body.night-mode #contact a {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+body.night-mode .nav-bar {
+  background-color: rgb(51, 51, 51, 0.8);
+}
+
 
 h1 {
   font-size: 2.5em;
@@ -55,6 +115,7 @@ h1:hover {
   top: 0;
   position: sticky;
   z-index: 1;
+
 }
 
 .nav-bar ul {
@@ -62,7 +123,8 @@ h1:hover {
   justify-content: flex-end;
   flex-direction: row;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 2em;
 }
 
 .nav-bar li {
@@ -84,9 +146,9 @@ h1:hover {
 
 .nav-bar a:hover {
   box-shadow: #aff 1px 1px 0px 0px;
-    background-color: black;
-    color: #aff;
-    border-color: black;
+  background-color: black;
+  color: #aff;
+  border-color: black;
 }
 
 .card {
@@ -216,7 +278,6 @@ li {
   color: grey;
 }
 
-
 .container {
   position: relative;
   display: grid;
@@ -296,4 +357,51 @@ li {
 #showcase {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pics-header {
+  margin-bottom: 1.5em;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  margin: 0.5em;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  background-color: white;
+  padding: 0.5em;
+  border: white solid 2px;
+  box-shadow: #aff 5px 4px 0px 0px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+#contact a:hover {
+  box-shadow: #aff 1px 1px 0px 0px;
+  background-color: black;
+  color: #aff;
+  border-color: black;
+}
+
+#contact ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+#contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
