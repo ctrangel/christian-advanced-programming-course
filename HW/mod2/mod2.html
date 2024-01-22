@@ -10,20 +10,27 @@
     <div class="container">
       <h1>Sign up</h1>
       <form action="mod2.php" method="post">
-        <input
-          type="text"
-          name="first-name"
-          id="first-name"
-          placeholder="First Name"
-        />
-        <input
-          type="text"
-          name="last-name"
-          id="last-name"
-          placeholder="Last Name"
-        />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="text" name="City" id="City" placeholder="City" />
+        <grid id="input-grid">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+          />
+
+          <input type="text" name="City" id="City" placeholder="City" />
+          <input type="text" name="State" id="State" placeholder="State" />
+          <input type="text" name="Zip" id="Zip" placeholder="Zip" />
+          <input type="phone" name="phone" id="phone" placeholder="Phone" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </grid>
+
         <button class="submit-button" type="submit">Submit</button>
       </form>
     </div>
