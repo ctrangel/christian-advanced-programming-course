@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HELLO</title>
+    <title>Christian Rangel</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
@@ -15,21 +15,54 @@
         <li><a href="#interests">Interests</a></li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#contact">Contact</a></li>
+        <button id="night-mode-toggle">Night Mode</button>
       </ul>
     </nav>
     <section class="section" id="heading">
-      <div class="card">
+      <div>
         <h1 id="heading">HELLO</h1>
         <h1>I'm Christian</h1>
       </div>
     </section>
+
     <section class="section" id="pic">
       <div class="card">
         <img
-          src="./media/placeholder.png"
+          src="./media/bigsurcow.jpg"
           alt="Christian"
           style="width: 25em; height: 25em; margin: 5em"
         />
+        <p>Big Sur Cow</p>
+      </div>
+      <div id="showcase">
+        <h1 id="pics-header">Here's some pics I took of places I liked</h1>
+        <div class="container">
+          <div
+            class="box box-1"
+            style="--img: url(./media/pittsburgh.jpg)"
+            data-text="Pittsburgh"
+          ></div>
+          <div
+            class="box box-2"
+            style="--img: url(./media/iceland2.jpg)"
+            data-text="Hvalfjörður"
+          ></div>
+          <div
+            class="box box-3"
+            style="--img: url(./media/montserrat.jpg)"
+            data-text="Montserrat"
+          ></div>
+          <div
+            class="box box-4"
+            style="--img: url(./media/osaka.jpg)"
+            data-text="Osaka"
+          ></div>
+          <div
+            class="box box-5"
+            style="--img: url(./media/ueno.jpg)"
+            data-text="Ueno"
+          ></div>
+        </div>
       </div>
     </section>
     <section class="section" id="interests">
@@ -66,7 +99,7 @@
           </li>
           <li>
             <p>CMPS 261</p>
-            <p>Management</p>
+            <p>Server Management</p>
           </li>
           <li>
             <p>CMPS 262</p>
@@ -91,9 +124,21 @@
       <div class="card">
         <h1>Contact</h1>
         <ul>
-          <li>Phone: 555-555-5555</li>
-          <li>Email:</li>
-          <li>Address:</li>
+          <li><a>Phone:</a> 412-841-7228</li>
+          <li>
+            <a href="mailto:ctrangel@pointpark.edu">Email:</a>
+            ctrangel@pointpark.edu
+          </li>
+          <div id="contact-footer">
+            <li>
+              <a href="https://www.linkedin.com/in/christian-rangel-9406a0189/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/crangel__/">Instagram</a>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
