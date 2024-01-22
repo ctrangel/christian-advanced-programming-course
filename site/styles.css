@@ -275,6 +275,9 @@ li {
   color: grey;
 }
 
+<<<<<<< HEAD:site/styles.css
+
+=======
 .container {
   position: relative;
   display: grid;
@@ -402,3 +405,4 @@ li {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+>>>>>>> ce8a2c9e946cc87037cc48fe1f55b299df722561:styles.css
