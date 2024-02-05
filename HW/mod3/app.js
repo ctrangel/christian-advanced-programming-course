@@ -17,6 +17,13 @@ const data = [
     state: "Missouri",
     id: 2
   },
+  {
+    name: "Trevor Lawrence",
+    age: 29,
+    city: "Jacksonville",
+    state: "Florida",
+    id: 3
+  }
 ];
 
 //Path to do something
