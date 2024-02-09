@@ -1,4 +1,5 @@
 const express = require("express");
+const inventoryRoutes = require("./src/inventory/routes");
 
 
 const app = express();
@@ -15,6 +16,13 @@ app.use(cors({
 app.get("/", (req, res) => {
     res.send("Henlo");
 })
+
+// API route
+// http://localhost:8003/api/vq/inventory
+
+
+app.use("/api/v1/inventory", inventoryRoutes);
+
 
 app.listen(port, () => {
     console.log("running on port", port);
