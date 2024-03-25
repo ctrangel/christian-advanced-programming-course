@@ -5,15 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha 'test/**/*.js'"
+    "test": "mocha 'test/**/*.js'",
+    "test:coverage": "nyc npm run test"
   },
   "dependencies": {
-    "init": "^0.1.2",
-    "nyc": "^15.1.0"
+    "init": "^0.1.2"
   },
   "devDependencies": {
     "chai": "^5.1.0",
     "cross-env": "^7.0.3",
-    "mocha": "^10.3.0"
+    "mocha": "^10.3.0",
+    "nyc": "^15.1.0"
   }
 }
