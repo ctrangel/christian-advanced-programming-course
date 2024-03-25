@@ -1,5 +1,5 @@
-const { expect } = require("chai");
-const Bison = require("../src/ppu");
+import { expect } from "chai";
+import Bison from "../src/ppu1.js";
 
 describe("Test Bison Class", () => {
   it("should return a value", () => {

@@ -2,22 +2,18 @@
   "name": "TestFrame",
   "version": "1.0.0",
   "description": "Sample QA App",
-  "main": "ppu.ts",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "mocha 'C:/Users/Chris/Documents/GitHub/christian-advanced-programming-course/TestFramework/test/ppu1.testspec'"
+    "test": "mocha 'test/**/*.js'"
   },
   "dependencies": {
     "init": "^0.1.2",
     "nyc": "^15.1.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.13",
-    "@types/mocha": "^10.0.6",
     "chai": "^5.1.0",
     "cross-env": "^7.0.3",
-    "mocha": "^10.3.0",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.2"
+    "mocha": "^10.3.0"
   }
 }
