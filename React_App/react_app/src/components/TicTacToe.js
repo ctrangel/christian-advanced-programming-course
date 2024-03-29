@@ -1,5 +1,7 @@
 import React from "react";
 import "../../src/TicTacToe.css";
+import { Box } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
 const TicTacToe = () => {
   const [board, setBoard] = React.useState(Array(9).fill(null));
@@ -61,22 +63,47 @@ const TicTacToe = () => {
   };
 
   return (
-    <div className="tic-tac-toe">
-      <h1>Tic Tac Toe</h1>
-      <div className="board">
-        {board.map((square, i) => (
-          <button key={i} className="square" onClick={() => handleClick(i)}>
-            {square}
-          </button>
-        ))}
-      </div>
-      <div>
-        <p>{getStatusMessage()}</p>
-      </div>
-      <button className="reset-button" onClick={resetGame}>
-        Reset Game
-      </button>
-    </div>
+    <Box
+      p={4}
+      border={"1px solid black"}
+      borderRadius={"md"}
+      width={"fit-content"}
+      display={"flex"}
+      flexDirection={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      backgroundColor={"#f0f0f0"}
+    >
+      <Box
+        m={4}
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        className="tic-tac-toe"
+      >
+        <Text
+          m={5}
+          fontSize={"25px"}
+         
+        >
+          Tic Tac Toe
+        </Text>
+        <Box className="board">
+          {board.map((square, i) => (
+            <button key={i} className="square" onClick={() => handleClick(i)}>
+              {square}
+            </button>
+          ))}
+        </Box>
+        <div>
+          <p>{getStatusMessage()}</p>
+        </div>
+        <button className="reset-button" onClick={resetGame}>
+          Reset Game
+        </button>
+      </Box>
+    </Box>
   );
 };
 

@@ -1,10 +1,23 @@
 import React from "react";
+import { Text } from "@chakra-ui/react";
 
 
 
 const Greeting = ({ isLoggedIn }) => {
     if (isLoggedIn) {
-        return <h1>Welcome back!</h1>;
+        return (
+          <Text
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            fontSize={"10em"}
+          
+            m={10}
+            className="elegantshadow"
+          >
+            Welcome back!
+          </Text>
+        );
     }
     return <h1>Please sign up.</h1>;
 }
