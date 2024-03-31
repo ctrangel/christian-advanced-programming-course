@@ -1,7 +1,8 @@
 import React from "react";
 import "../../src/TicTacToe.css";
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
+import Confetti from "react-confetti";
 
 const TicTacToe = () => {
   const [board, setBoard] = React.useState(Array(9).fill(null));
@@ -35,7 +36,6 @@ const TicTacToe = () => {
       }
     }
 
-    // Check for a draw (no nulls in the board array)
     const isDraw = board.every((square) => square !== null);
     if (isDraw) {
       setWinner("D"); // 'D' for Draw
@@ -63,47 +63,51 @@ const TicTacToe = () => {
   };
 
   return (
-    <Box
-      p={4}
-      border={"1px solid black"}
-      borderRadius={"md"}
-      width={"fit-content"}
-      display={"flex"}
-      flexDirection={"column"}
-      justifyContent={"center"}
-      alignItems={"center"}
-      backgroundColor={"#f0f0f0"}
-    >
+    <>
+      {winner && winner !== "D" && <Confetti />}
       <Box
-        m={4}
+        p={4}
+        border={"1px solid black"}
+        borderRadius={"md"}
+        width={"fit-content"}
         display={"flex"}
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
-        className="tic-tac-toe"
+        backgroundColor={"#f0f0f0"}
       >
-        <Text
-          m={5}
-          fontSize={"25px"}
-         
+        <Box
+          m={4}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          className="tic-tac-toe"
         >
-          Tic Tac Toe
-        </Text>
-        <Box className="board">
-          {board.map((square, i) => (
-            <button key={i} className="square" onClick={() => handleClick(i)}>
-              {square}
-            </button>
-          ))}
+          <Text m={5} fontSize={"25px"}>
+            Tic Tac Toe
+          </Text>
+          <Box className="board">
+            {board.map((square, i) => (
+              <button key={i} className="square" onClick={() => handleClick(i)}>
+                {square}
+              </button>
+            ))}
+          </Box>
+          <div>
+            <p>{getStatusMessage()}</p>
+          </div>
+          <Button
+            className="reset-button"
+            onClick={resetGame}
+            m={5}
+            bgColor={"#ca99e8"}
+          >
+            Reset Game
+          </Button>
         </Box>
-        <div>
-          <p>{getStatusMessage()}</p>
-        </div>
-        <button className="reset-button" onClick={resetGame}>
-          Reset Game
-        </button>
       </Box>
-    </Box>
+    </>
   );
 };
 
