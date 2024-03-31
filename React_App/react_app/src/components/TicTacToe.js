@@ -1,7 +1,6 @@
 import React from "react";
 import "../../src/TicTacToe.css";
-import { Box, Button } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import Confetti from "react-confetti";
 
 const TicTacToe = () => {
@@ -42,6 +41,7 @@ const TicTacToe = () => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(() => {
     checkWinner();
   }, [board]);
