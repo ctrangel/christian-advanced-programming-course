@@ -3,15 +3,46 @@ function ponderOrbResponse(inputText) {
   inputText = inputText.toLowerCase();
 
   if (inputText.includes("life")) {
-    return "The orb senses your quest for meaning. Life is a journey, embrace it.";
+    return (
+      "Your message: " +
+      inputText +
+      "\n" +
+      "Take a moment to ponder this: " +
+      "\n" +
+      "The orb senses your quest for meaning. Life is a journey, embrace it."
+    );
   } else if (inputText.includes("love")) {
-    return "Love is the essence of the universe. Seek connections.";
+    return (
+      "Your message: " +
+      inputText +
+      "Take a moment to ponder this: " +
+      "\n" +
+      "Love is the essence of the universe. Seek connections."
+    );
   } else if (inputText.includes("success")) {
-    return "Success is not final, failure is not fatal. It's the courage to continue that counts.";
+    return (
+      "Your message: " +
+      inputText +
+      "Take a moment to ponder this: " +
+      "\n" +
+      "Success is not final, failure is not fatal. It's the courage to continue that counts."
+    );
   } else if (inputText.includes("future")) {
-    return "The future holds mysteries yet to unfold. Stay curious.";
+    return (
+      "Your message: " +
+      inputText +
+      "\n" +
+      "Take a moment to ponder this: " +
+      "\n" +
+      "The future holds mysteries yet to unfold. Stay curious."
+    );
   } else {
-    return "The orb ponders deeply but finds no words. Take this quote from SpongeBob: 'I order the food. You cook the food. The customer gets the food. We do that for 40 years, and then we die'.";
+    return (
+      "Your message: " +
+      inputText + "\n" +
+      "Take a moment to ponder this: " + "\n" +
+      "The orb ponders deeply but finds no words. Take this quote from SpongeBob: 'I order the food. You cook the food. The customer gets the food. We do that for 40 years, and then we die'."
+    );
   }
 }
 
